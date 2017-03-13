@@ -49,14 +49,14 @@ function greet() {
 
       //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Greeting, " + inputText.value;
-      document.getElementById('inputText').value="";
+      document.getElementById('inputText').value = "";
 
     }
     else if(document.getElementById('Setswana').checked) {
 
       //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Dumela, " + inputText.value;
-      document.getElementById('inputText').value="";
+      document.getElementById('inputText').value = "";
 
 
     }
@@ -64,7 +64,7 @@ function greet() {
 
       //count.innerHTML="greeted today " + click;
       outputText.innerHTML = "Bonjour, " + inputText.value;
-      document.getElementById('inputText').value="";
+      document.getElementById('inputText').value ="";
     }
   }
 }
