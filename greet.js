@@ -15,14 +15,12 @@ function greet() {
       namesGreeted[inputText.value] = 1;
     if (document.getElementById('english').checked){
       click++;
-      //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Greeting, " + inputText.value;
       document.getElementById('inputText').value="";
 
     }
     else if(document.getElementById('Setswana').checked) {
       click++;
-      //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Dumela, " + inputText.value;
       document.getElementById('inputText').value="";
 
@@ -30,7 +28,6 @@ function greet() {
     }
     else if(document.getElementById('French').checked){
       click++;
-      //count.innerHTML="greeted today " + click;
       outputText.innerHTML = "Bonjour, " + inputText.value;
       document.getElementById('inputText').value="";
     }
@@ -46,23 +43,17 @@ function greet() {
 
   }else if(namesGreeted[inputText.value] !== undefined){
     if (document.getElementById('english').checked){
-
-      //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Greeting, " + inputText.value;
       document.getElementById('inputText').value = "";
 
     }
     else if(document.getElementById('Setswana').checked) {
-
-      //count.innerHTML= "greeted today " + click;
       outputText.innerHTML = "Dumela, " + inputText.value;
       document.getElementById('inputText').value = "";
 
 
     }
     else if(document.getElementById('French').checked){
-
-      //count.innerHTML="greeted today " + click;
       outputText.innerHTML = "Bonjour, " + inputText.value;
       document.getElementById('inputText').value ="";
     }
@@ -77,12 +68,3 @@ localStorage.clickcount = 0
 document.getElementById("result").innerHTML = "You have greeted " + localStorage.clickcount + " time(s).";
 
 }
-
-
-/*fuction namesGreeted(name){
-
-for(var i =0; i < namesGreeted.length; i++){
-
-}
-
-}*/
