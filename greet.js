@@ -1,10 +1,6 @@
 var namesGreeted = {};
-
-for (var i=0; i<namesGreeted.length; i++){
-}
-
 var inputText = document.querySelector("#inputText");
-var outputText=document.querySelector("#outputText");
+// var outputText=document.querySelector("#outputText");
 var count = document.querySelector('#calculate');
 click = 0;
 

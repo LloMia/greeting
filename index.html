@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="icon" href="download.jpg">
 
     <link rel="stylesheet" href="greet.css">
@@ -8,47 +9,45 @@
     <meta charset="utf-8">
     <title></title>
     <h1>Greetings!</h1>
-  </head>
+</head>
 
 
 
-  <body>
+<body>
     <div id="insert">
         <div id="greetInput">
 
-        <label><b>Name:</b></label>
-          <input id="inputText" type="text" value="" placeholder="   Type your name here"><br><br>
+            <label><b>Name:</b></label>
+            <input id="inputText" type="text" value="" placeholder="   Type your name here"><br><br>
+
+
+
+            <input type="radio" name="Language" value="english" id="english">English
+            <br><br><input type="radio" name="Language" value="Setswana" id="Setswana">Setswana
+            <br><br><input type="radio" name="Language" value="French" id="French">French
 
         </div>
 
 
-    <div id = "radio">
+        <br><br><button onclick="greet()">Greet Me</button><br><br>
+        <button id="clearreset" type="reset" onclick="resetBtn()">Reset</button><br><br>
 
-          <input type= "radio" name = "Language" value = "englis*h" id= "english">English
-          <input type= "radio" name = "Language" value = "Setswana" id="Setswana">Setswana
-          <input type= "radio" name = "Language" value = "French" id="French">French
+        <div id="outputText"></div>
 
+        <p id="calculate"></p>
+
+        <div id="result"></div>
     </div>
 
-
-    <br><br><button onclick="greet()">Greet Me</button><br><br>
-    <button id= "clearreset" type="reset" onclick="resetBtn()">Reset</button><br><br>
-
-      <div id = "outputText"></div>
-
-            <p id="calculate"></p>
-
-          <script src="greet.js"> </script>
-    </div>
-
-  <!--button onclick="clickCounter()" type="button">Click me!</button-->
-<div id="result"></div>
+    <script src="greet.js">
+    </script>
+    <!--button onclick="clickCounter()" type="button">Click me!</button-->
 
 
 
-  </body>
+</body>
 
-  <!--footer>
+<!--footer>
 <audio controls autoplay>
   <source src = "Chandelier - Sia (cover) (mp3goo.com).mp3">
 
