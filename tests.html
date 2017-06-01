@@ -13,6 +13,36 @@
 
   <body>
 
+
+    <div id="insert">
+        <div id="greetInput">
+
+            <label><b>Name:</b></label>
+            <input id="inputText" type="text" value="" placeholder="   Type your name here"><br><br>
+
+
+
+            <input type="radio" name="Language" value="english" id="english">English
+            <br><br><input type="radio" name="Language" value="Setswana" id="Setswana">Setswana
+            <br><br><input type="radio" name="Language" value="French" id="French">French
+
+        </div>
+
+
+        <br><br><button onclick="greet()">Greet Me</button><br><br>
+        <button id="clearreset" type="reset" onclick="resetBtn()">Reset</button><br><br>
+
+        <div id="outputText"></div>
+
+        <p id="calculate"></p>
+
+        <div id="result"></div>
+    </div>
+
+
+
+
+
     <div id="mocha"></div>
     <script>
 
@@ -23,6 +53,7 @@
 
 
 <!-- <script src="main.js" charset="utf-8"></script> -->
+<script src="DOM_testing.js" charset="utf-8"></script>
 <script src="greetings-cleancode.js" charset="utf-8"></script>
 <script src="test/value.test.js" charset="utf-8"></script>
 

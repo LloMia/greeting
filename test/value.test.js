@@ -32,12 +32,22 @@ describe("clear increment", function(){
   })
 })
 
-// describe("counter", function() {
-//     it("it should return 'true' when given Loyiso", function() {
-//         assert.equal(counter('Loyiso'), true);
-//     })
-//     it("it should return 'false' when given Chris", function() {
-//         assert.deepEqequalual(counter('Loyiso',), false);
-//
-//     })
-// })
+describe("DOM tesing", function(){
+  it("should greet in a language selected",function(){
+
+    var inputText = document.querySelector("#inputText");
+    var language  = document.querySelector('#French')
+
+    inputText.value = 'Loyiso';
+    language.checked = true;
+
+    var selectLanguage = languageSelected();
+
+    assert.equal('Loyiso', selectLanguage.inputText)
+    assert.equal('French', selectLanguage.language)
+
+    inputText.value = '';
+    language.checked = false;
+
+  })
+})
